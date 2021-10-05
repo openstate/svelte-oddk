@@ -1,2 +1,2 @@
-<div class="workspace">
+<div class="soddk-workspace">
 </div>
