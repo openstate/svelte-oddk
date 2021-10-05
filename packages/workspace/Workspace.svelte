@@ -1,3 +1,3 @@
 <div class="soddk-workspace">
-<slot>You should put something here.</slot>
+<slot>You should put somethingg here.</slot>
 </div>
