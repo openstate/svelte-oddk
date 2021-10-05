@@ -1,2 +1,3 @@
-<div class="oddk-menubar">
-</div>
+<header class="oddk-menubar">
+<slot></slot>
+</header>
