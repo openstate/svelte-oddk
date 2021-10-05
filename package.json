@@ -1,0 +1,30 @@
+{
+  "name": "svelte-oddk",
+  "version": "0.0.1",
+  "description": "Svelte Components for ODDK",
+  "keywords": [
+    "svelte",
+    "svelte3",
+    "svelte-components",
+    "sveltejs"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openstate/svelte-oddk.git"
+  },
+  "author": "Breyten Ernsting <breyten@openstate.eu>",
+  "bugs": {
+    "url": "https://github.com/openstate/svelte-oddk/issues"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@soddk/workspace": "0.0.1"
+  },
+  "devDependencies": {
+    "svelte": "^3.31.0"
+  }
+}
