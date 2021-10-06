@@ -1,14 +1,30 @@
 .oddk-logo {
-  max-width: 230px;
-  max-height: 50px;
+  display: block;
   position: relative;
   top: 13px;
   left: 18px;
+  height: 50px;
 }
 
 .oddk-menubar {
-  top: 20px;
-  left: 40px;
-  width: 100%;
   height: 84px;
+  margin: 20px 40px 0 40px;
+  box-shadow: 0px 0px 5px #00000029;
+  border-radius: 25px;
+  opacity: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.oddk-menubar-logo {
+}
+
+.oddk-menubar-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.oddk-menubar-item {
 }
