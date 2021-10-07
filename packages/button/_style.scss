@@ -1,6 +1,5 @@
 .oddk-button {
-  background: var(--oddk-theme-button-bg, #F5F5F5);
-  color: var(--oddk-theme-button-fg, #000000);
+  display: inline-block;
   min-width: 105px;
   padding: 11px 15px;
   font-size: 14px;
@@ -9,9 +8,18 @@
   border-radius: 20px;
 }
 
-.oddk-button-raised {
+.oddk-button-normal {
+  background: var(--oddk-theme-button-bg, #F5F5F5);
+  color: var(--oddk-theme-button-fg, #000000);
+}
+
+.oddk-button-raised, .oddk-button-normal:hover {
   background: var(--oddk-theme-button-raised-bg, #2A44E9);
   color: var(--oddk-theme-button-raised-fg, #ffffff);
+}
+
+.oddk-button-raised:hover {
+  opacity: 0.8;
 }
 
 .oddk-button-cta {
@@ -20,4 +28,9 @@
   padding: 12.5px 40.5px;
   font-size: 18px;
   line-height: 25px;
+  font-weight: bold;
+}
+
+.oddk-button-cta:hover {
+  opacity: 0.9;
 }
