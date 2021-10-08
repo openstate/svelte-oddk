@@ -1,0 +1,23 @@
+.oddk-profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.oddk-profile-avatar {
+  width: 46px;
+  height: 46px;
+  margin-right: 10px;
+}
+
+.oddk-profile-details {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.oddk-profile-byline {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
