@@ -1,0 +1,42 @@
+.oddk-tile {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 5px #00000029;
+  border-radius: 25px;
+  opacity: 1;
+  padding: 20px;
+}
+
+.oddk-tile-header {
+
+}
+
+.oddk-tile-body {
+  text-align: left;
+  /* font: normal normal 300 14px/22px IBM Plex Sans Condensed; */
+  fint-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.oddk-tile-body h3 {
+  text-align: left;
+  /* font: normal normal bold 18px/23px IBM Plex Sans Condensed; */
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  margin: 10px 0;
+}
+
+.oddk-tile-actions a {
+  text-align: left;
+  /* font: normal normal medium 12px/15px IBM Plex Sans Condensed; */
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0px;
+  color: #2A44E9;
+  opacity: 1;
+}
