@@ -1,9 +1,8 @@
-<svelte:component
-  this={component}
-  use={[forwardEvents]}
-  class="oddk-tile-action" {...exclude($$props, ['use', 'class', 'type'])}>
+<a {href}
+  use:forwardEvents
+  class="oddk-tile-action" {...exclude($$props, ['use', 'class'])}>
   <slot></slot>
-</svelte:component>
+</a>
 
 <script>
 import {get_current_component} from 'svelte/internal';
@@ -13,6 +12,5 @@ import A from '@soddk/common/A.svelte';
 import Button from '@soddk/button/';
 
 const forwardEvents = forwardEventsBuilder(get_current_component());
-export let href = null;
-export let component = href == null ? Button : A;
+export let href = 'javascript:void(0);'
 </script>
