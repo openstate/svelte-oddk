@@ -1,5 +1,7 @@
-<a {href}
+<a
+  use:useActions={use}
   use:forwardEvents
+  {href}
   class="
     oddk-button
     {className}
@@ -7,13 +9,14 @@
     {variant === 'raised' ? 'oddk-button-raised' : ''}
     {variant === 'cta' ? 'oddk-button-cta' : ''}
   "
-  {...exclude($$props, ['use', 'class', 'variant', ...dialogExcludes])}
+  {...exclude($$props, ['href', 'use', 'class', 'variant', ...dialogExcludes])}
 ><slot></slot></a>
 
 <script>
   import {get_current_component} from 'svelte/internal';
   import {forwardEventsBuilder} from '@soddk/common/forwardEvents.js';
-  import {exclude} from '@smui/common/exclude.js'; // TODO: uhm, need to factor this out`
+  import {exclude} from '@soddk/common/exclude.js';
+  import {useActions} from '@soddk/common/useActions.js';
 
   const forwardEvents = forwardEventsBuilder(get_current_component());
 

@@ -1,4 +1,5 @@
 <div
+  use:useActions={use}
   use:forwardEvents
   class="oddk-profile oddk-profile-{type}" {...exclude($$props, ['use', 'class', 'type', 'byline'])}>
   <img src="/images/oddk/{avatar}" class="oddk-profile-avatar" />
@@ -12,11 +13,13 @@
 
 <script>
 import {get_current_component} from 'svelte/internal';
-import {forwardEventsBuilder} from '@soddk/common/forwardEvents.js';
-import {exclude} from '@smui/common/exclude.js';
+import {forwardEventsBuilder} from './forwardEvents.js';
+import {exclude} from './exclude.js';
+import {useActions} from './useActions.js';
 
 const forwardEvents = forwardEventsBuilder(get_current_component());
 
+export let use = [];
 export let type = "person";
 export let avatar = type + ".svg";
 export let byline = '';
