@@ -1,4 +1,5 @@
 <div
+  use:useActions={use}
   use:forwardEvents
   class="oddk-tile-body" {...exclude($$props, ['use', 'class', 'type'])}>
   <slot></slot>
@@ -10,9 +11,11 @@
 <script>
 import {get_current_component} from 'svelte/internal';
 import {forwardEventsBuilder} from '@soddk/common/forwardEvents.js';
-import {exclude} from '@smui/common/exclude.js';
-
-export let image;
+import {exclude} from '@soddk/common/exclude.js';
+import {useActions} from '@soddk/common/useActions.js';
 
 const forwardEvents = forwardEventsBuilder(get_current_component());
+
+export let use = [];
+export let image;
 </script>
