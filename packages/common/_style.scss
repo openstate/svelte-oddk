@@ -27,8 +27,32 @@ h1 {
   /* font: normal normal bold 34px/46px Avenir Next; */
   font-size: 34px;
   line-height: 46px;
+  /*font-style: normal;*/
+  font-weight: 700 !important;
+  letter-spacing: 0px;
+  color: var(--oddk-color-main, #000000);
+  opacity: 1;
+  font-family: var(--oddk-font-main, "Avenir Next");
+}
+
+.oddk-h2-normal {
+  text-align: left;
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: var(--oddk-color-main, #000000);
+  opacity: 1;
+  font-family: var(--oddk-font-main, "Avenir Next");
+}
+
+.oddk-h2-alt {
+  text-align: left;
+  font-size: 24px;
+  line-height: 32px;
   font-weight: normal;
   letter-spacing: 0px;
-  color: #000000;
+  color: var(--oddk-color-main, #000000);
   opacity: 1;
+  font-family: var(--oddk-font-main, "IBM Plex Sans");
 }
