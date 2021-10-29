@@ -6,6 +6,7 @@
   line-height: 18px;
   text-align: center;
   border-radius: 20px;
+  font-family: --var(--oddk-button-normal-font, "IBM Plex Sans Condensed");
 }
 
 .oddk-button-normal {
@@ -26,6 +27,7 @@
   background: var(--oddk-theme-button-cta-bg, #2A44E9);
   color: var(--oddk-theme-button-cta-fg, #ffffff);
   padding: 12.5px 40.5px;
+  font-family: --var(--oddk-button-cta-font, "Avenir Next");
   font-size: 18px;
   line-height: 25px;
   font-weight: bold;
