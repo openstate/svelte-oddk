@@ -56,3 +56,25 @@ h1 {
   opacity: 1;
   font-family: var(--oddk-font-main, "IBM Plex Sans");
 }
+
+.oddk-tag {
+  color: var(--oddk-brand-main, #2A44E9);
+  opacity: 1.0;
+  background-color: var(--oddk-brand-main, #2A44E927);  /* opacity 0.15 */
+  text-decoration: none;
+  display: inline-block;
+}
+
+.oddk-tag-normal {
+  border-radius: 14px;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 7px 22px 6px 22px;
+}
+
+.oddk-tag-big {
+  border-radius: 20px;
+  padding: 11px 24px 11px 23px;
+  font-size: 14px;
+  line-height: 18px;
+}
