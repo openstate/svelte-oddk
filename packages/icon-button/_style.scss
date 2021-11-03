@@ -1,0 +1,20 @@
+.oddk-icon-button {
+  width: 44px;
+  height: 44px;
+  background: var(--oddk-icon-button-bg, #f5f5f5) 0% 0% no-repeat padding-box;
+  opacity: 1;
+  color: var(--icon-button-fg, #BCBCBC);
+  border-radius: 22px;
+  display: inline-block;
+  margin: 11px;
+}
+
+.oddk-icon-button svg {
+  margin: 11px;
+}
+
+.oddk-icon-button:hover {
+  background: var(--oddk-icon-button-bg, #f5f5f5) 0% 0% no-repeat padding-box;
+  opacity: 1;
+  color: var(--icon-button-bg, #000000);
+}
